@@ -1,0 +1,22 @@
+
+
+.thank_you span{
+
+    font-size: 4rem;
+    color:green;
+}
+.thank_you h1{
+    font-size:3.6rem;
+    font-family: var(--subtitle-font-name);
+}
+
+.primary_btn {
+    background-color: var(--primary-color); /* Adjust to your primary color */
+    color: #fff; /* Change text color to white */
+    border-radius: 25px; /* Change this value for desired roundness */
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.primary_btn:hover {
+    background-color: darken(var(--primary-color), 10%); /* Darken on hover for effect */
+}

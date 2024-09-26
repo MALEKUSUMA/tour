@@ -1,0 +1,146 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Styling for the Register button */
+.primary_btn {
+    background-color: #ff7f00 !important; /* Orange background */
+    color: white !important; /* White text */
+    border-radius: 25px; /* Rounded corners */
+    border: none; /* No border */
+}
+
+.primary_btn:hover {
+    background-color: #e67300 !important; /* Darker orange on hover */
+}
+
+/* Styling for the Login button */
+.secondary_btn {
+    background-color: #ffffff !important; /* White background */
+    color: black !important; /* Black text */
+    border: none !important; /* No border */
+}
+
+.secondary_btn:hover {
+    background-color: #f2f2f2 !important; /* Light gray on hover */
+}
+
+/* Ensure anchor tag inherits the button color */
+.nav_btn a {
+    color: inherit !important; /* Inherit color from button */
+    text-decoration: none !important; /* Remove underline */
+}
+
+.nav_btn a:hover {
+    color: inherit !important; /* No color change on hover */
+}
+
+
+/* login and register end */
+
+
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo img {
+    width: 100px; /* Increased size for better visibility */
+    height: auto;
+}
+
+.menu {
+    margin-bottom: 0;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: var(--heading-color);
+    font-weight: 500; /* Adjusted font-weight */
+    font-size: 1.1rem;
+}
+
+.nav_item a:hover{
+    color: inherit;
+}
+.nav_item a.active_link{
+    color: var(--secondary-color);
+}
+
+.mobile_menu{
+    font-style: 1.3rem;
+    color: var(--heading-color);
+    display: none;
+}
+
+.sticky_header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background:#fff; 
+    position :sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    z-index: 999;
+}
+
+/* make it responsive */
+
+@media only screen and (max-width:992px){
+    .logo img{
+        width: 20%;
+    }
+    .navigation{
+        width: 100%;
+        height: 100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        background:rgbs(0,0,0,0.411);
+        z-index:999;
+        display: none;
+
+    }
+    .menu{
+        position:absolute;
+        top: 0;
+       right: 0;
+        width:calc(100%-75%);
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        line-height: 0.5rem;
+       justify-content: center;
+       z-index:9999;
+
+    }
+    .show_menu{
+        display: block;
+    }
+    .mobile_menu{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .logo img{
+        width: 45%;
+    }
+    .menu{
+        width: calc(100%-50%);
+    }
+}
